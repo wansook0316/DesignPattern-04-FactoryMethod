@@ -9,7 +9,10 @@ import Foundation
 
 internal protocol Factory {
 
+    // 모든 팩토리에서 수행하는 기본 동작 정의
     func create(with name: String) -> Object?
+
+    // 구현하는 팩토리에서 구현하는 Custom 동작
     func isCreatable(with name: String) -> Bool
     func postProcessing(with name: String)
 
