@@ -15,6 +15,7 @@
 		CE17B09028AA254100B7050B /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B08F28AA254100B7050B /* Shield.swift */; };
 		CE17B09228AA254800B7050B /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B09128AA254800B7050B /* Bow.swift */; };
 		CE17B09428AA25E400B7050B /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B09328AA25E400B7050B /* Weapon.swift */; };
+		CE8689F828AA325E000F1B7D /* WeaponCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8689F728AA325E000F1B7D /* WeaponCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		CE17B08F28AA254100B7050B /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
 		CE17B09128AA254800B7050B /* Bow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
 		CE17B09328AA25E400B7050B /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		CE8689F728AA325E000F1B7D /* WeaponCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CE17B08B28AA252D00B7050B /* WeaponFactory.swift */,
+				CE8689F728AA325E000F1B7D /* WeaponCategory.swift */,
 				CE17B08D28AA253400B7050B /* Sword.swift */,
 				CE17B08F28AA254100B7050B /* Shield.swift */,
 				CE17B09128AA254800B7050B /* Bow.swift */,
@@ -161,6 +164,7 @@
 				CE17B09428AA25E400B7050B /* Weapon.swift in Sources */,
 				CE17B08C28AA252D00B7050B /* WeaponFactory.swift in Sources */,
 				CE17B08828AA251D00B7050B /* Factory.swift in Sources */,
+				CE8689F828AA325E000F1B7D /* WeaponCategory.swift in Sources */,
 				CE17B09228AA254800B7050B /* Bow.swift in Sources */,
 				CE17B08A28AA252100B7050B /* Object.swift in Sources */,
 				CE17B09028AA254100B7050B /* Shield.swift in Sources */,

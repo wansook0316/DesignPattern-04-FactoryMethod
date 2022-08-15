@@ -13,6 +13,7 @@ internal protocol Factory {
     func create(with name: String) -> Object?
 
     // 구현하는 팩토리에서 구현하는 Custom 동작
+    func createObject(with name: String) -> Object?
     func isCreatable(with name: String) -> Bool
     func postProcessing(with name: String)
 
@@ -25,7 +26,7 @@ extension Factory {
             return nil
         }
 
-        let object = self.create(with: name)
+        let object = self.createObject(with: name)
         self.postProcessing(with: name)
         return object
     }

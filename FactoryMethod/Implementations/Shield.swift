@@ -9,7 +9,7 @@ import Foundation
 
 internal struct Shield: Weapon {
 
-    internal static var identifier: String = "shield"
+    internal static var name: String = "shield"
 
     internal func use() {
         print("방패로 막았다..!")

@@ -10,9 +10,9 @@ import Foundation
 internal struct WeaponFactory: Factory {
 
     internal init() {
-        self.repository[Sword.identifier] = WeaponInfo(maxCount: 3)
-        self.repository[Shield.identifier] = WeaponInfo(maxCount: 2)
-        self.repository[Bow.identifier] = WeaponInfo(maxCount: 1)
+        self.repository[Sword.name] = WeaponInfo(maxCount: 3)
+        self.repository[Shield.name] = WeaponInfo(maxCount: 2)
+        self.repository[Bow.name] = WeaponInfo(maxCount: 1)
     }
 
     internal func isCreatable(with name: String) -> Bool {
@@ -29,8 +29,23 @@ internal struct WeaponFactory: Factory {
         return true
     }
 
+    internal func createObject(with name: String) -> Object? {
+        guard let category = WeaponCategory(name: name) else {
+            return nil
+        }
+
+        switch category {
+        case .sword:
+            return Sword()
+        case .shield:
+            return Shield()
+        case .bow:
+            return Bow()
+        }
+    }
+
     internal func postProcessing(with name: String) {
-        guard var weaponInfo = self.repository[name] else {
+        guard let weaponInfo = self.repository[name] else {
             return
         }
 
@@ -43,7 +58,8 @@ internal struct WeaponFactory: Factory {
 
 extension WeaponFactory {
 
-    private struct WeaponInfo {
+    // struct시 dictorary에서 복사해서 던지기 때문에 내부 변수값 수정이 번거로워 수정
+    private class WeaponInfo {
         internal var isOutOfStock: Bool {
             self.salesCount >= self.maxCount
         }
@@ -53,7 +69,7 @@ extension WeaponFactory {
             self.salesCount = .zero
         }
 
-        internal mutating func increaseSalesRecord() {
+        internal func increaseSalesRecord() {
             self.salesCount += 1
         }
 
