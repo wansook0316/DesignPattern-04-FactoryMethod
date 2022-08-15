@@ -9,6 +9,8 @@ import Foundation
 
 internal protocol Weapon: Object {
 
+    static var identifier: String { get }
+
     func use()
 
 }

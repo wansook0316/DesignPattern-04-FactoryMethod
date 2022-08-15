@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+internal struct Sword: Weapon {
+
+    internal static var identifier: String = "sword"
+
+    internal func use() {
+        print("칼로 베었다..!")
+    }
+
+}
