@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CE17B07F28AA1D4600B7050B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B07E28AA1D4600B7050B /* main.swift */; };
+		CE17B08828AA251D00B7050B /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B08728AA251D00B7050B /* Factory.swift */; };
+		CE17B08A28AA252100B7050B /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B08928AA252100B7050B /* Object.swift */; };
+		CE17B08C28AA252D00B7050B /* WeaponFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B08B28AA252D00B7050B /* WeaponFactory.swift */; };
+		CE17B08E28AA253400B7050B /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B08D28AA253400B7050B /* Sword.swift */; };
+		CE17B09028AA254100B7050B /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B08F28AA254100B7050B /* Shield.swift */; };
+		CE17B09228AA254800B7050B /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B09128AA254800B7050B /* Bow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		CE17B07B28AA1D4600B7050B /* FactoryMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryMethod; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE17B07E28AA1D4600B7050B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CE17B08728AA251D00B7050B /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		CE17B08928AA252100B7050B /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		CE17B08B28AA252D00B7050B /* WeaponFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponFactory.swift; sourceTree = "<group>"; };
+		CE17B08D28AA253400B7050B /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		CE17B08F28AA254100B7050B /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		CE17B09128AA254800B7050B /* Bow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,31 @@
 		CE17B07D28AA1D4600B7050B /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
+				CE17B08628AA251000B7050B /* Interfaces */,
+				CE17B08528AA243000B7050B /* Implementations */,
 				CE17B07E28AA1D4600B7050B /* main.swift */,
 			);
 			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		CE17B08528AA243000B7050B /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				CE17B08B28AA252D00B7050B /* WeaponFactory.swift */,
+				CE17B08D28AA253400B7050B /* Sword.swift */,
+				CE17B08F28AA254100B7050B /* Shield.swift */,
+				CE17B09128AA254800B7050B /* Bow.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		CE17B08628AA251000B7050B /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CE17B08728AA251D00B7050B /* Factory.swift */,
+				CE17B08928AA252100B7050B /* Object.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17B08E28AA253400B7050B /* Sword.swift in Sources */,
+				CE17B08C28AA252D00B7050B /* WeaponFactory.swift in Sources */,
+				CE17B08828AA251D00B7050B /* Factory.swift in Sources */,
+				CE17B09228AA254800B7050B /* Bow.swift in Sources */,
+				CE17B08A28AA252100B7050B /* Object.swift in Sources */,
+				CE17B09028AA254100B7050B /* Shield.swift in Sources */,
 				CE17B07F28AA1D4600B7050B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
