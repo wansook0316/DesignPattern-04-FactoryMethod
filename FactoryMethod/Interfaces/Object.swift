@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+internal protocol Object {
+
+    func execute()
+
+}
